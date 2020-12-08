@@ -1,6 +1,6 @@
 public class DebugExample {
     public static void main(String[] args) {
-        int firstNumber = 46;
+        int firstNumber = 23;
         int secondNumber = 22;
 
         System.out.println(firstNumber);
