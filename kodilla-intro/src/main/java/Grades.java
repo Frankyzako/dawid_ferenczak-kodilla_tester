@@ -21,10 +21,14 @@ public class Grades {
     }
 
     //metoda oblicza srednia ocen
-    public static void average(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j) {
-        double result = (a + b + c + d + e + f + g + h + i + j) / 10;
-
-        System.out.println(result);
+    double average() {
+        int sum = 0;
+        for (int i = 0; i < grades.length; i++) {
+            sum += grades[i];
+        }
+        return sum / 10;
     }
 
 }
+
+
