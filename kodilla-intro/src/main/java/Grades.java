@@ -1,4 +1,10 @@
 public class Grades {
+    public static void main(String[] args){
+
+        Grades grades1 = new Grades();
+        grades1.average();
+    }
+
 
     private int[] grades;
     private int size;
@@ -23,9 +29,10 @@ public class Grades {
 
     //metoda oblicza srednia ocen
      double average() {
-        int sum = 0;
+        double sum = 0;
         for (int i = 0; i < grades.length; i++) {
             sum += grades[i];
+            System.out.println(sum);
         }
         return sum / 10;
     }
