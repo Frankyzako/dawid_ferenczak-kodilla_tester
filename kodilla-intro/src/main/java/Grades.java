@@ -1,4 +1,5 @@
 public class Grades {
+
     private int[] grades;
     private int size;
 
@@ -21,7 +22,7 @@ public class Grades {
     }
 
     //metoda oblicza srednia ocen
-    double average() {
+     double average() {
         int sum = 0;
         for (int i = 0; i < grades.length; i++) {
             sum += grades[i];
