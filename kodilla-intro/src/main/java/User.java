@@ -9,19 +9,19 @@ public class User {
 
         User[] users = {dawid, maciek, rafal, krzysiek, mirek};
 
-        double a = User.average();
+        double a = users.length;
         System.out.println(a);
     }
 
     String name;
-    static int age;
+    int age;
 
     public User(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    static int getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -31,7 +31,7 @@ public class User {
 
 
 
-    static double average() {
+     double average() {
         int sum = 0;
         for (int i = 0; i < getAge(); i++) {
             sum = sum + getAge();
