@@ -1,17 +1,28 @@
 public class User {
-
     public static void main(String[] args) {
-        User dawid = new User("Dawid", 10);
-        User maciek = new User("Maciek", 23);
-        User rafal = new User("Rafal", 14);
-        User krzysiek = new User("Krzysiek", 35);
-        User mirek = new User("Mirek", 31);
+    User dawid = new User("Dawid", 10);
+    User maciek = new User("Maciek", 23);
+    User rafal = new User("Rafal", 14);
+    User krzysiek = new User("Krzysiek", 35);
+    User mirek = new User("Mirek", 31);
 
-        User[] users = {dawid, maciek, rafal, krzysiek, mirek};
+    User[] users = {dawid, maciek, rafal, krzysiek, mirek};
 
-        double a = users.length;
-        System.out.println(a);
+    int sum = 0;
+    for (int i = 0; i < users.length; i++) {
+        sum = sum + users[i].getAge();
     }
+    double av= sum / users.length;
+    System.out.println("Srednia wieku uzydkowników to: " + av);
+
+        for(int i = 0; i <= 4; i++){
+            if(av>users[i].getAge()){
+                System.out.println("Uzydkownicy ktorych wiek jest ponizej sredniej to: \n" + users[i].getName());
+            }
+        }
+
+
+}
 
     String name;
     int age;
@@ -29,15 +40,5 @@ public class User {
         return name;
     }
 
-
-
-     double average() {
-        int sum = 0;
-        for (int i = 0; i < getAge(); i++) {
-            sum = sum + getAge();
-        }
-        return sum / 5;
-
-    }
 }
 
