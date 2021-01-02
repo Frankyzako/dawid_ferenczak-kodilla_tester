@@ -24,9 +24,9 @@ public class Application {
         int squaredResult = calculator.squared(a);
         boolean correct3 = ResultChecker.assertEquals(25, squaredResult);
         if (correct3) {
-            System.out.println("Metoda squared działa poprawnie dla liczb " + a + " i " + b);
+            System.out.println("Metoda squared działa poprawnie dla liczby " + a);
         } else {
-            System.out.println("Metoda squared nie działa poprawnie dla liczb " + a + " i " + b);
+            System.out.println("Metoda squared nie działa poprawnie dla liczby " + a);
         }
 
 
