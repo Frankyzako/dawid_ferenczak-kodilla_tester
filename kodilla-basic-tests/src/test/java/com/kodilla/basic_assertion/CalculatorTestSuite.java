@@ -20,9 +20,11 @@ public class CalculatorTestSuite {
             int squaredResult = calculator.squared(a);
             assertEquals(25, squaredResult);
         } else if (a == 0) {
+
             System.out.println("ERROR. 'a' can not be equal 0");
-        }
-        else{System.out.println("ERROR. 'a' can not be less than 0");
+        } else {
+
+            System.out.println("ERROR. 'a' can not be less than 0");
         }
     }
 }
