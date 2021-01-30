@@ -20,6 +20,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "uczen: " + name + '\'' + ", nauczyciel: " + teacher;
+        return "uczen: " + name + ", nauczyciel: " + teacher;
     }
 }
